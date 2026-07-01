@@ -93,7 +93,7 @@ sidebar_position: 3
 ### Interface air (RU to DU)
 - **Standard** : IETF eCPRI / split7
 - **Type** : Fronthaul encapsulation
-- **Performance** : Latence basse (<10ms)
+- **Performance** : Latence basse (moins de 10 ms)
 - **Vendor-neutral** : Tout RRH compatible
 
 ### Interface DU to CU

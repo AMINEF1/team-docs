@@ -40,7 +40,7 @@ open http://localhost:8080
 ### RRH
 - **Certified vendor** : Airspan, Telia, Mavenir, Nokia, Ericsson
 - **Interface** : eCPRI over Ethernet
-- **Latency** : < 10ms
+- **Latency** : moins de 10 ms
 
 ---
 

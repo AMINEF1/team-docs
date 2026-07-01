@@ -88,21 +88,23 @@ open http://localhost:8080
 
 ## Options de déploiement
 
-### **Option 1 : All-in-One (Développement)**
+### All-in-One Setup (Développement)
 - Tout sur une machine
 - Parfait pour : PoC, lab, testing
 - Déploiement : 15 minutes
-- Coût : 1 serveur (~$500)
+- Coût : 1 serveur (environ $500)
 
-### **Option 2 : Distributed (Production)**
+### Distributed Deployment (Production)
 - DU / CU / 5GC sur machines séparées
 - Parfait pour : Déploiement commercial
 - Déploiement : Quelques heures
-- Coût : 3-5 serveurs (~$2000)
+- Coût : 3-5 serveurs (environ $2000)
 
-### **Option 3 : Redundant (High Availability)**
+### Redundant Setup (High Availability)
 - Multi-DU, multi-CU, multi-5GC
 - Parfait pour : Critical infrastructure
+- Déploiement : Jours (orchestration)
+- Coût : 10+ serveurs (environ $5000+)
 - Déploiement : Jours (orchestration)
 - Coût : 10+ serveurs (~$5000+)
 

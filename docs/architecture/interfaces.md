@@ -34,40 +34,40 @@ SimpleRAN repose sur des standards ouverts et transparents :
 
 ## Interfaces clés
 
-### **O-RU to O-DU (eCPRI)**
+### Radio Unit to Distributed Unit (eCPRI)
 ```
-RRH (O-RU) ──eCPRI──► DU (O-DU)
-  Dumb radio        Baseband processing
+RRH (Remote Radio Head) ──eCPRI──► DU (Distributed Unit)
+  Dumb radio                    Baseband processing
   
 - Standard: IETF eCPRI / split7
-- Latency: < 10ms
+- Latency: below 10ms
 - Encapsulation: Ethernet / IP
 - Vendor-neutral: Toute implémentation compatible
 ```
 
-### **O-DU to O-CU (F1-AP)**
+### Distributed Unit to Centralized Unit (F1-AP)
 ```
-DU (O-DU) ──F1-AP──► CU (O-CU)
-  RLC/MAC/PHY      RRC/SDAP
+DU (Distributed Unit) ──F1-AP──► CU (Centralized Unit)
+  RLC/MAC/PHY                  RRC/SDAP
   
 - Standard: 3GPP F1-AP
 - Protocol: SCTP/IP
-- Latency: < 100ms
+- Latency: below 100ms
 - Type: Midhaul
 ```
 
-### **O-CU to 5GC (N2 / NGAP)**
+### Centralized Unit to 5G Core Network (N2/NGAP)
 ```
 CU (gNB) ──NGAP──► 5GC (AMF/SMF)
   RAN           Core Network
   
-- Standard: 3GPP N2-NGAP
+- Standard: 3GPP N2 NGAP
 - Protocol: SCTP/IP
 - Type: Backhaul
 - Reliability: Full 3GPP compliance
 ```
 
-### **Data Path (N3 / GTP-U)**
+### Data Path (N3 GTP-U)
 ```
 UPF (5GC) ◄──GTP-U──► UE
   User Plane        Mobile

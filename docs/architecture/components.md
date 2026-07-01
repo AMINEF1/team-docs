@@ -96,12 +96,12 @@ sidebar_position: 3
 - **Performance** : Latence basse (<10ms)
 - **Vendor-neutral** : Tout RRH compatible
 
-### Interface DU-CU (DU to CU)
+### Interface DU to CU
 - **Standard** : 3GPP F1-AP
 - **Encapsulation** : Protocols agnostiques
 - **Type** : Midhaul (optionnel, peut être colocalisé)
 
-### Interface Core (gNB to 5GC)
+### Interface Core to 5G Core Network
 - **Standard** : 3GPP N2 (NGAP)
 - **Protocol** : SCTP/IP
 - **Type** : Signalisation vers Core
@@ -117,7 +117,7 @@ sidebar_position: 3
 | **Transparence** | Standards ouverts, pas de propriété |
 | **Performance** | 6 Gbps 5G réel |
 | **Coût** | 50% moins cher que solutions propriétaires |
-| **Flexibilité** | Même hardware pour 4G/5G |
+| **Flexibilité** | Même hardware pour 4G ou 5G |
 
 ---
 

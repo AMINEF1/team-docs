@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Team Docs',
-  tagline: 'Technical documentation for 5G and Open RAN',
+  title: 'SimpleRAN Documentation',
+  tagline: 'Transparent, carrier-grade vRAN deployment for 5G and beyond',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -27,7 +27,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
+  organizationName: 'AMINEF1', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -80,12 +80,13 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       colorMode: {
-        respectPrefersColorScheme: true,
+        respectPrefersColorScheme: false,
+        defaultMode: 'dark',
       },
       navbar: {
-        title: 'Team Docs',
+        title: 'SimpleRAN',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'SimpleRAN Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -93,11 +94,11 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Documentation',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/AMINEF1/team-docs',
             label: 'GitHub',
             position: 'right',
           },
@@ -107,11 +108,36 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Documentation',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Architecture',
+                to: '/docs/architecture/overview',
+              },
+              {
+                label: 'Deployment',
+                to: '/docs/deployment/quickstart',
+              },
+              {
+                label: 'Community',
+                to: '/docs/community/how-to-contribute',
+              },
+            ],
+          },
+          {
+            title: 'SimpleRAN',
+            items: [
+              {
+                label: 'Official Website',
+                href: 'https://www.simpleran.org/',
+              },
+              {
+                label: 'Libre Endowment Fund',
+                href: 'https://fdl-lef.org/',
+              },
+              {
+                label: 'GitHub Organization',
+                href: 'https://github.com/simpleran',
               },
             ],
           },
@@ -119,34 +145,21 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Mailing List',
+                href: 'mailto:simpleran@fdl-lef.org',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'GitHub Issues',
+                href: 'https://github.com/simpleran/simpleran-quick-start/issues',
               },
               {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/simpleran/',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} SimpleRAN Contributors. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,

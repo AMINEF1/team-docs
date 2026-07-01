@@ -1,30 +1,42 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * SimpleRAN Color Theme
+ * Navy Blue + Green Accent
  */
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* SimpleRAN Primary Color - Navy Blue */
+  --ifm-color-primary: #1a4a7d;
+  --ifm-color-primary-dark: #164073;
+  --ifm-color-primary-darker: #153868;
+  --ifm-color-primary-darkest: #102852;
+  --ifm-color-primary-light: #1e5287;
+  --ifm-color-primary-lighter: #225a92;
+  --ifm-color-primary-lightest: #2a6eb5;
+  
+  /* Accent Green */
+  --ifm-color-success: #5CB85C;
+  --ifm-color-info: #3d7d3d;
+  
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  /* SimpleRAN in Dark Mode - Lighter Navy + Green */
+  --ifm-color-primary: #47d47f;
+  --ifm-color-primary-dark: #3cc971;
+  --ifm-color-primary-darker: #35bb64;
+  --ifm-color-primary-darkest: #2b9950;
+  --ifm-color-primary-light: #52dd8d;
+  --ifm-color-primary-lighter: #5de595;
+  --ifm-color-primary-lightest: #75f0a7;
+  
+  /* Accent Green in Dark Mode */
+  --ifm-color-success: #5CB85C;
+  --ifm-color-info: #47d47f;
+  
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+

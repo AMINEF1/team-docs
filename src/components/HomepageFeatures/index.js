@@ -1,51 +1,53 @@
-import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
+    title: 'Architecture',
+    href: '/docs/architecture/overview',
+    description:
+      'High-level notes for the 5G and Open RAN environment, including components, standards, and interfaces.',
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
+    title: 'Deployment',
+    href: '/docs/deployment/quickstart',
+    description:
+      'Infrastructure requirements, quickstart steps, SlapOS notes, and Wendelin integration points.',
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
+    title: 'Experiments',
+    href: '/docs/experiments/iot-scenarios',
+    description:
+      'Reusable experiment writeups for IoT, UERANSIM, Open5GS, Free5GC, srsRAN, and lab validation.',
+  },
+  {
+    title: 'Standards',
+    href: '/docs/api-reference/standards',
+    description:
+      'Reference material for 3GPP, ETSI, IETF, eCPRI, F1-AP, NGAP, and related SimpleRAN interfaces.',
+  },
+  {
+    title: 'Community',
+    href: '/docs/community/how-to-contribute',
+    description:
+      'Team contribution workflow, governance notes, and practical rules for keeping documentation useful.',
+  },
+  {
+    title: 'How to document',
+    href: '/docs/community/how-to-document',
+    description:
+      'A lightweight template for adding procedures, experiments, troubleshooting notes, and meeting outputs.',
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({title, href, description}) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
-    </div>
+    <Link className={styles.featureCard} to={href}>
+      <span className={styles.cardEyebrow}>Team docs</span>
+      <Heading as="h3">{title}</Heading>
+      <p>{description}</p>
+    </Link>
   );
 }
 
@@ -53,9 +55,13 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+        <div className={styles.sectionHeader}>
+          <Heading as="h2">Work areas</Heading>
+          <p>Use these sections to keep technical work discoverable, reviewed, and reusable by the whole team.</p>
+        </div>
+        <div className={styles.featureGrid}>
+          {FeatureList.map((props) => (
+            <Feature key={props.title} {...props} />
           ))}
         </div>
       </div>

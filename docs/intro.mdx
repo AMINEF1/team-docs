@@ -2,46 +2,29 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# SimpleRAN team documentation
 
-Let's discover **Docusaurus in less than 5 minutes**.
+This site is the shared technical documentation space for the team working on SimpleRAN, 5G core, Open RAN experiments, and lab deployments.
 
-## Getting Started
+## What belongs here
 
-Get started by **creating a new site**.
+- Architecture decisions and network diagrams
+- Deployment procedures for lab and production-like setups
+- Experiment notes with commands, parameters, and results
+- Troubleshooting steps for recurring issues
+- References for standards, interfaces, and tools
+- Team contribution and governance notes
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## Main sections
 
-### What you'll need
+- [Architecture](./architecture/overview.md): global view of the 5G and Open RAN environment
+- [Deployment](./deployment/quickstart.md): quickstart, infrastructure, SlapOS, and Wendelin notes
+- [Experiments](./experiments/iot-scenarios.md): reusable experiment writeups and scenarios
+- [Standards](./api-reference/standards.md): interfaces and reference material
+- [Community](./community/how-to-contribute.md): contribution workflow and team rules
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## Documentation rule
 
-## Generate a new site
+A useful page should explain the context, the commands or configuration used, the result, and what the next person should do with that information.
 
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+For new notes, start with [How to document](./community/how-to-document.md).

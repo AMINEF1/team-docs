@@ -47,14 +47,14 @@ sidebar_position: 3
 
 ## Détail des composants
 
-### 1. **RRH (Remote Radio Head)**
+### RRH (Remote Radio Head)
 - **Rôle** : Antenne "bête" - aucune logique de réseau
 - **Protocoles** : eCPRI / split7 (IETF)
 - **Standards** : Dumb radio, tout protocole supporté
 - **Certification** : 5 vendeurs déjà certifiés SimpleRAN
 - **Avantage** : Réutilisable pour 4G, 5G, 6G
 
-### 2. **SDR (Software Defined Radio)**
+### SDR (Software Defined Radio)
 - **Fonction** : Traitement radio (baseband)
 - **Implémentations** :
   - OAI (Open Air Interface)
@@ -63,7 +63,7 @@ sidebar_position: 3
 - **Standards** : 3GPP NR, LTE
 - **Flexibilité** : Logiciel, mises à jour OTA
 
-### 3. **OSS (Open Source Software)**
+### OSS (Open Source Software)
 - **Composants** :
   - **DU (Distributed Unit)** : Split 7 / CU/DU split
   - **CU (Centralized Unit)** : Logique de haut niveau
@@ -71,7 +71,7 @@ sidebar_position: 3
 - **Linux Foundation** : Totalement open source
 - **Performance** : 100% logiciel
 
-### 4. **Core Network**
+### Core Network
 - **Implémentations** :
   - Free5GC
   - Open5GS
@@ -79,7 +79,7 @@ sidebar_position: 3
 - **Standards** : 3GPP 5G Core
 - **Distributed** : Support réseau distribué
 
-### 5. **Standard PC (Intel/AMD)**
+### Standard PC (Intel/AMD)
 - **CPU** : Processeurs Intel/AMD standard
 - **RAM** : 32-64 GB selon déploiement
 - **Stockage** : SSD pour OS + données
@@ -90,13 +90,13 @@ sidebar_position: 3
 
 ## Interfaces standards
 
-### Interface air (O-RU to O-DU)
+### Interface air (RU to DU)
 - **Standard** : IETF eCPRI / split7
 - **Type** : Fronthaul encapsulation
 - **Performance** : Latence basse (<10ms)
 - **Vendor-neutral** : Tout RRH compatible
 
-### Interface DU-CU (O-DU to O-CU)
+### Interface DU-CU (DU to CU)
 - **Standard** : 3GPP F1-AP
 - **Encapsulation** : Protocols agnostiques
 - **Type** : Midhaul (optionnel, peut être colocalisé)

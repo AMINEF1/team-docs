@@ -89,9 +89,9 @@ Grafana Dashboard
 
 | Metric | Target |
 |--------|--------|
-| **Latency** | <50ms (E2E) |
-| **Throughput** | 100+ Mbps |
-| **Reliability** | 99.9% |
+| **Latency** | Less than 50ms (E2E) |
+| **Throughput** | Over 100 Mbps |
+| **Reliability** | 99.9% uptime |
 | **Scalability** | 1000+ sensors |
 
-C'est plus loin avec Wendelin et SlapOS !
+Suite avec Wendelin et SlapOS !
